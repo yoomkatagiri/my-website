@@ -2,33 +2,28 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Snipcart テスト注文サンプル</title>
-
-  <link href="https://cdn.snipcart.com/themes/v3.6.0/default/snipcart.css" rel="stylesheet" />
+  <title>Snipcart テスト商品ページ</title>
+  <script src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"></script>
+  <link href="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.css" rel="stylesheet" />
 </head>
 <body>
 
   <h1>Snipcart テスト商品</h1>
+  <p>これはテスト用の商品ページです。</p>
 
   <button
     class="snipcart-add-item"
     data-item-id="test-product-001"
     data-item-name="テスト商品"
-    data-item-price="1000"
-    data-item-url="https://www.google.com/"  <!-- 確実にアクセスできるURL -->
-    data-item-description="テスト用の商品です。"
-    data-item-quantity="1"
+    data-item-price="1500"
+    data-item-url="https://yoomkatagiri.github.io/my-website/product.html"
+    data-item-description="テスト商品の説明"
   >
-    カートに追加
+    カートに入れる
   </button>
 
-  <div hidden id="snipcart"
-       data-api-key="NzU0OTljZjgtNjM3My00ODE0LWEyMzgtODMwNDcwZDRkMzUyNjM4ODU2NDgyMzMxMjEyNjk1"
-       data-config-add-product-behavior="manual"
-       data-config-skip-url-validation="true"
-       data-config-modal-style="side"></div>
+  <!-- Snipcart用 -->
+  <div hidden id="snipcart" data-api-key="NzU0OTljZjgtNjM3My00ODE0LWEyMzgtODMwNDcwZDRkMzUyNjM4ODU2NDgyMzMxMjEyNjk1"></div>
 
-  <script src="https://cdn.snipcart.com/themes/v3.6.0/default/snipcart.js"></script>
 </body>
 </html>
